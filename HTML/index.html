@@ -1,0 +1,107 @@
+<!-- inline and block elements: block elemetns take full width and has spaces before and after them,like paragraph or div,
+  inline elements don't -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- image 'img' used to embedd images, with attributes like
+    'src' to add the srouce of the image, relative path:for same file anf folder, absolute path for online images
+    next 'alt' attribute: if the image is not working, the alternate text shown to the user
+    next height and width attribute-->
+    <!-- <img
+      src="lalbaugcha raja.jpg"
+      alt="LALBAUGCHA RAJA"
+      height="500"
+      width="1000"
+    /> -->
+    <!-- enter tag, used to add links. attributes used like "href" to add the link,
+    "target" to open in the same page or different tab -->
+    <a href="https://github.com/" target="_blank"> Github </a>
+    <!-- embedded a link inside an image -->
+    <!-- <a href="https://github.com/" target="_blank">
+      <img
+        src="aayush image.png"
+        alt="Aayush Kunal Thakur"
+        height="350"
+        width="450"
+    /></a> -->
+
+    <!-- 
+    list
+    1. unordered/bulleted  attribute: type
+       <ul type = "disc/ cricle/ square/none"> by-defuault type: disc
+       <li>(list item) </li>
+       </ul>
+    2. ordered/ numbered  attributes: type, start, reversed
+       <ol type = "A" / "a" (by-default type: number) 
+       start= "4"(only accepts numberic value) (starts from D/d)
+       reversed>
+           <li>
+       </ol>
+
+
+    3. description/definition
+       <dl>
+        <dt>description term</dt>
+          <dd>description data, by-default italic
+
+       </dl>
+    
+    -->
+    <h1>Nested List</h1>
+    <ol type="I">
+      <li>Background Skills</li>
+      <ol type="A">
+        <li>Unix Commands</li>
+        <li>Vim Test editors</li>
+      </ol>
+      <li>HTML</li>
+      <ol type="A" start="F" reversed>
+        <li>Minimal Page</li>
+        <li>Headings</li>
+        <li>Elements</li>
+        <li>Lists</li>
+        <ol type="i">
+          <li>unordered</li>
+          <li>ordered</li>
+          <li>Definition</li>
+          <li>Nested</li>
+        </ol>
+        <li>Links</li>
+        <ol type="i">
+          <li>Absolute</li>
+          <li>Relative</li>
+        </ol>
+        <li>Images</li>
+      </ol>
+      <li>CSS</li>
+      <ol type="A">
+        <li>Anatomy</li>
+        <li>Basic selectors</li>
+        <ol type="i">
+          <li>Elements</li>
+          <li>Class</li>
+          <li>ID</li>
+          <li>Group</li>
+        </ol>
+        <li>The DOM</li>
+        <li>Advanced Selectors</li>
+        <li>Box Model</li>
+      </ol>
+      <li>Programming</li>
+      <ol type="A">
+        <li>Programming</li>
+        <li>JavaScript</li>
+      </ol>
+      <li>Database</li>
+      <ol type="A">
+        <li>Flat File</li>
+        <li>Relational</li>
+      </ol>
+    </ol>
+  </body>
+</html>
