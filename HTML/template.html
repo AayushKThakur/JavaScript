@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Layout Template</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: space-between;
+        padding: 20px;
+      }
+      .main-content {
+        flex: 0 0 70%;
+        max-width: 70%;
+      }
+      .sidebar {
+        flex: 0 0 25%;
+        max-width: 25%;
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      .card {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+    <!-- <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+    
+      h1 {
+        font-size: 24px;
+      }
+      p {
+        margin: 10px 0;
+      }
+      @media screen and (max-width: 768px) {
+        .main-content {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+        .sidebar {
+          flex: 0 0 100%;
+          max-width: 100%;
+          margin-top: 20px;
+        }
+        .cards {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media screen and (max-width: 480px) {
+        .cards {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style> -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-content">
+        <h1>This is the main heading</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, quo
+          ratione. Reprehenderit iure magnam exercitationem odio minus quae eum
+          veritatis.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
+          ullam exercitationem corporis atque qui praesentium! Commodi, error
+          quaerat! Officia esse ipsam architecto reprehenderit temporibus minus
+          quos voluptas ex, a minima!
+        </p>
+
+        <div class="cards">
+          <div class="card">
+            <h2>Card One</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Exercitationem blanditiis sint alias praesentium maxime non!
+            </p>
+          </div>
+          <div class="card">
+            <h2>Card Two</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              delectus voluptas pariatur earum ad exercitationem.
+            </p>
+          </div>
+          <div class="card">
+            <h2>Card Three</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              magni libero dignissimos sunt, perspiciatis eos?
+            </p>
+          </div>
+          <div class="card">
+            <h2>Card Four</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+              ducimus quia sequi distinctio iusto dicta?
+            </p>
+          </div>
+          <div class="card">
+            <h2>Card Five</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
+              labore maiores, libero ipsam iste maxime.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <p>
+          Have you discovered all of the other excellent content on this
+          website?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
