@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipe Book</title>
+    <style>
+        /* Basic styling for page layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #333;
+        }
+
+        /* Header and navigation styles */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: #4CAF50;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        /* Recipe section styling */
+        section {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Image and list styling */
+        img {
+            display: block;
+            margin: 10px auto;
+            width: 200px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        /* Styling for table overview */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        /* Form styling */
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="file"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section with Title and Navigation Links -->
+    <header>
+        <h1>My Recipe Book</h1>
+        <nav>
+            <a href="#breakfast">Breakfast</a> |
+            <a href="#lunch">Lunch</a> |
+            <a href="#submit-recipe">Submit Recipe</a>
+        </nav>
+    </header>
+
+    <!-- Recipe Section: Breakfast -->
+    <section id="breakfast">
+        <h2>Breakfast</h2>
+        <article>
+            <h3>Pancakes</h3>
+            <img src="pancakes.jpg" alt="A stack of pancakes">
+            <h4>Ingredients:</h4>
+            <ul>
+                <li>1 cup Flour</li>
+                <li>1 cup Milk</li>
+                <li>2 large Eggs</li>
+            </ul>
+            <h4>Instructions:</h4>
+            <ol>
+                <li>Mix all ingredients in a bowl.</li>
+                <li>Pour batter onto a hot skillet.</li>
+                <li>Cook until golden on each side, then serve warm.</li>
+            </ol>
+        </article>
+    </section>
+
+    <!-- Recipe Section: Lunch -->
+    <section id="lunch">
+        <h2>Lunch</h2>
+        <article>
+            <h3>Grilled Cheese Sandwich</h3>
+            <img src="grilled_cheese.jpg" alt="Grilled Cheese Sandwich">
+            <h4>Ingredients:</h4>
+            <ul>
+                <li>2 slices Bread</li>
+                <li>2 slices Cheese</li>
+                <li>1 tbsp Butter</li>
+            </ul>
+            <h4>Instructions:</h4>
+            <ol>
+                <li>Butter one side of each bread slice.</li>
+                <li>Place cheese between slices, buttered side out.</li>
+                <li>Grill in a pan until golden and cheese is melted.</li>
+            </ol>
+        </article>
+    </section>
+
+    <!-- Submit Recipe Form Section -->
+    <section id="submit-recipe">
+        <h2>Submit Your Recipe</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <!-- Input for Recipe Name -->
+            <label for="recipe-name">Recipe Name:</label>
+            <input type="text" id="recipe-name" name="recipe_name" placeholder="Enter recipe name" required>
+
+            <!-- Input for User's Name -->
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <!-- Input for User's Email -->
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="yourname@example.com" required>
+
+            <!-- File Upload for Recipe Image -->
+            <label for="recipe-image">Upload Recipe Image:</label>
+            <input type="file" id="recipe-image" name="recipe_image" accept="image/*">
+
+            <!-- Text Area for Recipe Instructions -->
+            <label for="instructions">Instructions:</label>
+            <textarea id="instructions" name="instructions" rows="4" placeholder="Write recipe instructions here..." required></textarea>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit Recipe">
+        </form>
+    </section>
+
+    <!-- Recipe Table Overview -->
+    <section id="recipe-table">
+        <h2>Recipe Overview</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Recipe Name</th>
+                    <th>Preparation Time</th>
+                    <th>Servings</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pancakes</td>
+                    <td>10 mins</td>
+                    <td>2 servings</td>
+                </tr>
+                <tr>
+                    <td>Grilled Cheese Sandwich</td>
+                    <td>5 mins</td>
+                    <td>1 serving</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer Section with Contact Information -->
+    <footer>
+        <p>Contact us at <a href="mailto:info@myrecipebook.com">info@myrecipebook.com</a></p>
+        <p>&copy; 2024 My Recipe Book</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 150px; 
+    height: auto;
+    border-radius: 50%; /* Make the image circular, if desired */
+    margin-right: 20px; /* Space between the image and the text */
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+    color: #555;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+}
+
+

@@ -5,6 +5,7 @@
 
 const arr = [1, 2, 3, 4, 5]
 
+
 for (const num of arr) {
     //console.log(num);
 }
@@ -25,8 +26,14 @@ map.set('IN', "India")
 
 // console.log(map);
 
+// for(const key of mao){
+//     console.log(key);
+    //prints the whole array
+// }
+
 for (const [key, value] of map) {
     // console.log(key, ':-', value);
+        //prints destructured array 
 }
 
 const myObject = {
